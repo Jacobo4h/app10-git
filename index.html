@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Decima Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/1.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery-mobile.icons-1.4.5.min.css"/>
+<link rel=""stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>-->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head>
+<body onLoad="MM_preloadImages('imagenes/Amaryllis_005.jpg','imagenes/Ciudad-de-Atlixco-f-1.jpg','imagenes/en-atlixco-lanzan-concurso-para-el-cartel-del-huey-atlixcayotl.jpg','imagenes/capilla-del-cerro-de.jpg','imagenes/ex-convento-del-carmen-1.jpg','imagenes/mural2.jpg','imagenes/Villa2.jpg','imagenes/descarga.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Atlixco Puebla</h1>
+</div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/atlixco_pueblo_magico_puebla_mexico_7.jpg" alt="atlixco pueblo magico puebla mexico 7" title="atlixco pueblo magico puebla mexico 7" id="wows2_0"/></li>
+		<li><img src="data2/images/d748627ed2a307b0150e690c3050efd0_l.jpg" alt="d748627ed2a307b0150e690c3050efd0_L" title="d748627ed2a307b0150e690c3050efd0_L" id="wows2_1"/></li>
+		<li><img src="data2/images/plazadearmadeatlixco.jpg" alt="plaza-de-arma-de-atlixco" title="plaza-de-arma-de-atlixco" id="wows2_2"/></li>
+		<li><img src="data2/images/kioscodeatlixcopuebla..jpg" alt="KIOSCO-DE-ATLIXCO-PUEBLA." title="KIOSCO-DE-ATLIXCO-PUEBLA." id="wows2_3"/></li>
+		<li><img src="data2/images/acuedcuto.jpg" alt="acuedcuto" title="acuedcuto" id="wows2_4"/></li>
+		<li><img src="data2/images/atlixco1.jpg" alt="atlixco1" title="atlixco1" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data2/images/atlixco6.jpg" alt="image slider" title="atlixco-6" id="wows2_6"/></a></li>
+		<li><img src="data2/images/atlixco_10.jpg" alt="atlixco_10" title="atlixco_10" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atlixco pueblo magico puebla mexico 7"><span><img src="data2/tooltips/atlixco_pueblo_magico_puebla_mexico_7.jpg" alt="atlixco pueblo magico puebla mexico 7"/>1</span></a>
+		<a href="#" title="d748627ed2a307b0150e690c3050efd0_L"><span><img src="data2/tooltips/d748627ed2a307b0150e690c3050efd0_l.jpg" alt="d748627ed2a307b0150e690c3050efd0_L"/>2</span></a>
+		<a href="#" title="plaza-de-arma-de-atlixco"><span><img src="data2/tooltips/plazadearmadeatlixco.jpg" alt="plaza-de-arma-de-atlixco"/>3</span></a>
+		<a href="#" title="KIOSCO-DE-ATLIXCO-PUEBLA."><span><img src="data2/tooltips/kioscodeatlixcopuebla..jpg" alt="KIOSCO-DE-ATLIXCO-PUEBLA."/>4</span></a>
+		<a href="#" title="acuedcuto"><span><img src="data2/tooltips/acuedcuto.jpg" alt="acuedcuto"/>5</span></a>
+		<a href="#" title="atlixco1"><span><img src="data2/tooltips/atlixco1.jpg" alt="atlixco1"/>6</span></a>
+		<a href="#" title="atlixco-6"><span><img src="data2/tooltips/atlixco6.jpg" alt="atlixco-6"/>7</span></a>
+		<a href="#" title="atlixco_10"><span><img src="data2/tooltips/atlixco_10.jpg" alt="atlixco_10"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atlixco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Viveros</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Fiesta del Huey Atlixcayotl</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ex-conventos del Carmen o San Francisco</h2>
+  </a>
+  </li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2><strong>Mirador Cerro de San Miguel</strong></h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Villa iluminada</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Murales de Palacio Municipal</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Centro Cultural el Carmen</h2>
+</a>
+</li>
+</ul>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Autor</h1>
+<div>
+<h3>Luis Jacobo Rosales Velazco</h3>
+<h3>Proramacion</h3>
+<h3>4 Semestre grupo H</h3>
+<h3>CBTiS16</h3>
+<p><img src="imagenes/20170427_101609.jpg" width="326" height="244
+"></p>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="64" height="64">
+<h4>Guia turistica</h4>
+<h4>Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Atlixco</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>La ciudad de las flores se ubica en las faldas del volcán Popocatépetl, presume de tener el mejor clima del mundo y las flores son parte del paisaje cotidiano.</p>
+  
+  <p>Durante tu visita no dejes de conocer el zócalo, una plaza de estilo arabesco, la cual alberga el Ex convento del Carmen, que data del siglo XVI, la Iglesia de la Merced construida en 1680 con una importante colección pictórica, la Capilla de la Tercera Orden, con un magnífico retablo barroco o el Templo y Convento de Santa Clara.</p>
+  
+  <p>El Viernes Santo los engrillados caminan sobre caminos de flores. Y la música y danzas del Huey Atlixcayotl honran a Quetzalcóatl y Xochipilli, el dios de la música, las artes, el amor, la belleza y las flores.  </p>
+  
+  <p>Atlixco presume de disfrutar del mejor clima del mundo. En las laderas del volcán, rigen manantiales de aguas medicinales, balnearios y espectaculares vistas del Popocatépetl.</p>
+  
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Atlixco  </h1>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','imagenes/Ciudad-de-Atlixco-f-1.jpg',1)"><img src="imagenes/atlixco_10.jpg" width="421" height="253" id="Image43"></a>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child"><a href="http://atlixco.gob.mx/lugares-de-interes" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+  </div> 
+  </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<img src="res/android/mdpi.png" width="64" height="64">
+<h4>Guia turistica</h4>
+<h4>Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Viveros</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/vivero1.jpg" alt="Vivero1" title="Vivero1" id="wows1_0"/></li>
+		<li><img src="data1/images/vivero2.jpg" alt="Vivero2" title="Vivero2" id="wows1_1"/></li>
+		<li><img src="data1/images/vivero3.jpg" alt="vivero3" title="vivero3" id="wows1_2"/></li>
+		<li><img src="data1/images/vivero4.jpg" alt="Vivero4" title="Vivero4" id="wows1_3"/></li>
+		<li><img src="data1/images/vivero5.jpg" alt="Vivero5" title="Vivero5" id="wows1_4"/></li>
+		<li><img src="data1/images/vivero6.jpg" alt="Vivero6" title="Vivero6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/vivero7.jpg" alt="http://wowslider.com/" title="Vivero7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/vivero8.jpg" alt="Vivero8" title="Vivero8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Vivero1"><span><img src="data1/tooltips/vivero1.jpg" alt="Vivero1"/>1</span></a>
+		<a href="#" title="Vivero2"><span><img src="data1/tooltips/vivero2.jpg" alt="Vivero2"/>2</span></a>
+		<a href="#" title="vivero3"><span><img src="data1/tooltips/vivero3.jpg" alt="vivero3"/>3</span></a>
+		<a href="#" title="Vivero4"><span><img src="data1/tooltips/vivero4.jpg" alt="Vivero4"/>4</span></a>
+		<a href="#" title="Vivero5"><span><img src="data1/tooltips/vivero5.jpg" alt="Vivero5"/>5</span></a>
+		<a href="#" title="Vivero6"><span><img src="data1/tooltips/vivero6.jpg" alt="Vivero6"/>6</span></a>
+		<a href="#" title="Vivero7"><span><img src="data1/tooltips/vivero7.jpg" alt="Vivero7"/>7</span></a>
+		<a href="#" title="Vivero8"><span><img src="data1/tooltips/vivero8.jpg" alt="Vivero8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<p>Uno de los muchos atractivos turísticos que ofrece el municipio de Atlixco son los viveros de la colonia cabrera, mismos que se han encargado de preservar el nombre de “Atlixco de las Flores” esto por la producción de más de 120 mil plantas que se tiene.</p>
+
+<p>Son más de 100 los viveros que se encuentran en toda esta colonia que gracias al turista, así como a los amantes de las flores día con día se va posicionando en el mercado como lugar favorito para llevarse un recuerdo viviente de este Pueblo Mágico.</p>
+
+<p>La temporada influye mucho en cuanto a las ventas, un claro ejemplo es en noviembre y diciembre donde lo fuerte es la noche buena, misma que se comienza a producir en este mes de marzo para que se encuentre en su máximo esplendor a finales de cada año.</p>
+
+<p>Cada fin de semana se puede ver a cientos y cientos de turistas visitando los viveros de cabrera, así como las carretillas llenas de flores que tiene como destino la cajuela de un automóvil que las llevara a darle vida a un hogar fuera de este municipio.</p>
+
+<p>En temporada de vacaciones se puede ver el doble si no es que el tripe de visitantes que se quedan admirados ante la belleza que cada una de ellas tiene sin dejar de lado el olor de algunas que enamora.</p>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Flores</h1>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/Amaryllis_005.jpg',1)"><img src="imagenes/Begonia_001.jpg" width="369" height="230" id="Image26"></a> </div>
+
+
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child"><a href="http://www.megaviveros.com.mx/" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+  </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div align="center"><img src="res/android/mdpi.png" width="64" height="64">
+</div>
+<h4 align="center">Guia turistica</h4>
+<h4 align="center">Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Fiesta del Huey Atlixcayotl</h1>
+</div>
+<div data-role="content" align="center">
+  <p>Atlixcáyotl es la máxima fiesta de Atlixco y la segunda más importante a nivel Nacional, expresión de convivencia donde se observa, se aprecia y se disfruta la forma de vestirse, hablar, cantar, bailar y la manera de agradecerle a la naturaleza por los beneficios obtenidos de ella por parte de los participantes.</p>
+  <p>Donde las danzas mas esperadas son la del  Calabazeado de Atlixco, los Tecuanes de Acatlan de Osorio y el rito de los Voladores de la Sierra de Puebla.</p>
+  <p>El festival está acompañado de un convite que se realiza un domingo previo donde se recorren los principales templos de la ciudad y al bailar  por las calles las chinas Atlixqueñas entregan una banderita hecha de papel picado que significa la invitación a la gran fiesta y los charros a pie reparten el mezcal, que lo llevan en una botella adornada de flores de papel china y  de su morral sacan canutos hechos de carrizo, donde sirven el mezcal dándole un sabor especial y esto se convierte en una gran fiesta que termina en los balcones de la Presidencia Municipal, donde las mujeres suben a compartir los dulces y frutas de la region que llevan en sus canastas, esto se realiza el  tercer domingo de septiembre.</p>
+  <p align="left"></p>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h3>Fiesta</h3>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/en-atlixco-lanzan-concurso-para-el-cartel-del-huey-atlixcayotl.jpg',1)"><img src="imagenes/604433_festival-atlixco-4.jpg" width="346" height="215" id="Image44"></a> </div>
+  </div>  
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <a href="https://www.mexicodesconocido.com.mx/festival-huey-atlixcayotl-atlixco-puebla.html" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<img src="res/android/mdpi.png" width="64" height="64">
+<h4>Guia turistica</h4>
+<h4>Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Ex-conventos de San Francisco</h1>
+</div>
+<div data-role="content" align="center">
+  <h3>Ex-convento de    San Francisco</h3>
+  <p>El ex-convento franciscano de Santa María de Jesús se ubica en el cerro de San Miguel, lugar ceremonial donde se celebra el Huey Atlixcayotl</a>. Data del siglo XVI. Construido en dos periodos, el primero abarca de 1538 a 1550, el segundo de 1560 a 1620. Perteneció a los franciscanos, dedicado a evangelizar a los indígenas de la región. El conjunto arquitectónico lo forman un gran atrio, el templo y el convento. Tiene una puerta atrial con dos arcos y en la fachada los nichos del vía crucis. A mediados del siglo XIX fueron colocados en el templo parte de los bienes muebles de la iglesia del Carmen destacando entre ellos el retablo mayor que es considerado como uno de los más bellos que se ejecutaron en la Nueva España durante el siglo XVII.
+  <p>Es la primera fundación franciscana en el lugar que en el momento de la conquista española se llamó Acapetlahucán, que quiere decir; &ldquo;lugar donde se hacían esteras de caña seca&rdquo;, ubicada en las faldas del ahora cerro de San Miguel.</p>
+  <p>Es durante el gobierno de la primera audiencia que fray Toribio de Benavente, &ldquo;Motolinia&rdquo;, funda entre los años de 1551 y 1562 el templo en una congregación de indios que había ayuntado fray Alonso de Buendía y lo dedica a la Visitación de Nuestra Señora.</p>
+  <p>Cuentan con guía</p>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Conventos</h1>
+  </div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image49','','imagenes/descarga.jpg',1)"><img src="imagenes/58c14d04ea7d9b2910e24aef05b926e1_XL.jpg" width="344" height="209" id="Image49"></a> </div>
+</div>
+<div style="width:90%;"> </div>
+<div style="width:90%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/iglesias/item/ex-convento-franciscano-de-atlixco" data-role="button" id="beep">
+    <h2>Ex convento franciscano</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+   
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div align="center"><img src="res/android/mdpi.png" width="64" height="64">
+</div>
+<h4 align="center">Guia turistica</h4>
+<h4 align="center">Luis Jacobo Rosales Velazco</h4>
+
+</div>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Mirador Cerro de San Miguel</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Si tienes ánimo aventurero te invitamos a subir al Cerro de San Miguel para que eches un vistazo de la ciudad desde sus miradores y si todavía te quedan un poco de fuerzas, que subas la escalinata hasta la hermita dedicada al Arcángel San Miguel; que cuenta la historia, encerró al diablito que hacía de las suyas en los solares dentro del pozo que se encuentra ahí.</p>
+  <p>Su fiesta se celebra el 29 de Septiembre.</p>
+  <p>&nbsp;</p>
+  
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Mirador</h1>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/capilla-del-cerro-de.jpg',1)"><img src="imagenes/60282255.jpg" width="327" height="196" id="Image46"></a> </div>
+
+
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/miradores/item/cerro-de-san-miguel" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+   </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div align="center"><img src="res/android/mdpi.png" width="64" height="64">
+</div>
+<h4 align="center">Guia turistica</h4>
+<h4 align="center">Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Villa iluminada</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p><strong>Atlixco, nuevamente estará llena de la luz. Te esperan noches llenas de color que harán que pases una grata estancia, caminando por sus calles que te deslumbrarán a cada paso.<br>
+  </strong>La <strong>&ldquo;Villa Iluminada&rdquo;</strong> es un recorrido que resalta la belleza arquitectónica de esta ciudad, embelleciéndola con luz.</p>
+  <p>Durante más de cuarenta días las calles formarán un circuito de luz y color, vestidas de figuras y escenas alusivas a la navidad, las tradiciones y la identidad de la ciudad.</p>
+  <p>Los edificios antiguos serán engalanados con luces, lo que destacará su bella arquitectura y valor histórico.</p>
+  <p>Además, no te pierdas actividades:</p>
+  <ul>
+    <li><strong>Artísticas</strong></li>
+    <li><strong>Culturales </strong></li>
+    <li><strong>Deportivas </strong></li>
+    <li><strong>Stands de Flores</strong></li>
+    <li><strong>Artesanías</strong></li>
+    <li><strong>Artículos navideños y de temporada</strong></li>
+    <li><strong>Gastronomía típica</strong></li>
+  </ul>
+
+  <p>El recorrido del espectáculo iniciará en la Calle Hidalgo, bajando hacia el zócalo de Atlixco, pasa por el callejón Constitución y sigue por la calle 4 norte, frente al exconvento de El Carmen, llegará a calle Nicolás Bravo, después al boulevard Ferrocarriles y finalizará en el Parque Revolución.</p>
+  
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Villa</h1>
+
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image48','','imagenes/Villa2.jpg',1)"><img src="imagenes/villa1.jpg" width="338" height="155" id="Image48"></a> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <a href="http://poblano.mx/2015/11/villa-iluminada-en-atlixco-25-de-noviembre-al-24-de-diciembre-2015-atlixco-puebla/" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+   </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div align="center"><img src="res/android/mdpi.png" width="64" height="64">
+</div>
+<h4 align="center">Guia turistica</h4>
+<h4 align="center">Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Murales de Palacio Municipal</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>En el interior de Palacio Municipal así como en la planta baja del exterior (Ex Biblioteca), disfruta los murales de la Fundación de Atlixco, la Historia de la Educación en México o los Héroes de la Independencia y Reforma con diferentes estilos pictóricos, así como la vida obrera y textil que marco una época de grandeza en Atlixco, hasta los acontecimientos más sobresalientes en el municipio como lo es la Villa Iluminada.</p>
+ 
+  
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Murales</h1>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image47','','imagenes/mural2.jpg',1)"><img src="imagenes/mural1.jpg" width="297" height="186" id="Image47"></a> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <a href="http://www.puebla.travel/es/ver-hacer/sitios-de-interes/espacios-naturales-3/item/murales-de-palacio-municipal" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+   </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div align="center"><img src="res/android/mdpi.png" width="64" height="64">
+</div>
+<h4 align="center">Guia turistica</h4>
+<h4 align="center">Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">Centro Cultural el Carmen</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>La Iglesia y el Convento del Carmen fue fundada en Atlixco por la orden de los Carmelitas y data de 1600 a 1620. En su interior cuenta con un claustro pequeño, uno o dos claustros grandes, huerta, dependencias e iglesia anexa a todo el convento, al igual que todas las construcciones de la orden.</p>
+  <p>A lo largo de su historia ha sido sido utilizado como sede del Gobierno Municipal, Palacio de Justicia e incluso como Cuartel de tropas federales durante la Revolución mexicana. En la actualidad es sede del Centro Cultural del Carmen.</p>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Centro</h1>
+</div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/ex-convento-del-carmen-1.jpg',1)"><img src="imagenes/A1_1160.jpg" width="311" height="204" id="Image"></a> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <a href="http://www.mexicoescultura.com/recinto/66922/centro-cultural-el-carmen-atlixco.html" data-role="button" id="beep">
+    <h2>Ver mas</h2>
+    </a>
+    </li>
+   
+   </ul>
+   </div>
+  </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div align="center"><img src="res/android/mdpi.png" width="64" height="64">
+</div>
+<h4 align="center">Guia turistica</h4>
+<h4 align="center">Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
